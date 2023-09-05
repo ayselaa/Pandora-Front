@@ -1679,7 +1679,6 @@ __subtitle {
   border: none;
   text-align: center;
   width: 80%;
-  -moz-appearance: textfield;
 }
 
 .basket__num input::-webkit-outer-spin-button,
@@ -3960,3 +3959,31 @@ a {
   height: 45px;
   margin-top: 1rem;
 }
+
+
+/*  Profile Tab  Css Start */
+
+.tab-nl.active{
+  background-color: #ffcad4 !important;
+  color: black !important;
+}
+
+.tab-nl{
+background-color: rgba(0, 0, 0, 0.76) !important;
+color: white !important;
+margin: 0.2rem  0!important;
+}
+
+@media (max-width: 1024px){
+.mq-tab-item{
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-pills{
+  padding: 3rem 1rem;
+  margin-top: 1rem;
+}
+}
+
+/*  Profile Tab  Css End */
