@@ -21,9 +21,6 @@
 
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <title>Document</title>
 
@@ -575,26 +572,15 @@
       <div class="row p-around">
         <div class="d-flex align-items-start mq-tab-item">
           <div class="nav flex-column nav-pills me-3 col-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <button class="nav-link tab-nl active" id="v-pills-userdata-tab" data-bs-toggle="pill"
-              data-bs-target="#v-pills-userdata" type="button" role="tab" aria-controls="v-pills-userdata"
-              aria-selected="true">istifadəçi Məlumatları</button>
-            <button class="nav-link tab-nl" id="v-pills-newpassword-tab" data-bs-toggle="pill"
-              data-bs-target="#v-pills-newpassword" type="button" role="tab" aria-controls="v-pills-newpassword"
-              aria-selected="false">Şifrəni Yenilə</button>
-            <button class="nav-link tab-nl" id="v-pills-orderdate-tab" data-bs-toggle="pill"
-              data-bs-target="#v-pills-orderdate" type="button" role="tab" aria-controls="v-pills-orderdate"
-              aria-selected="false">Sifariş Tarixçəsi</button>
-            <button class="nav-link tab-nl" id="v-pills-paydate-tab" data-bs-toggle="pill"
-              data-bs-target="#v-pills-paydate" type="button" role="tab" aria-controls="v-pills-paydate"
-              aria-selected="false">Ödəniş Tarixçəsi</button>
-            <button class="nav-link tab-nl" id="v-pills-addressinfo-tab" data-bs-toggle="pill"
-              data-bs-target="#v-pills-addressinfo" type="button" role="tab" aria-controls="v-pills-addressinfo"
-              aria-selected="false">Ünvan Məlumatlari</button>
+            <button class="nav-link tab-nl tab-button active" data-tab="tab1">istifadəçi Məlumatları</button>
+            <button class="nav-link tab-nl tab-button" data-tab="tab2">Şifrəni Yenilə</button>
+            <button class="nav-link tab-nl tab-button" data-tab="tab3">Sifariş Tarixçəsi</button>
+            <button class="nav-link tab-nl tab-button" data-tab="tab4">Ödəniş Tarixçəsi</button>
+            <button class="nav-link tab-nl tab-button" data-tab="tab5">Ünvan Məlumatlari</button>
           </div>
 
           <div class="tab-content" style="width: 100%;" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-userdata" role="tabpanel"
-              aria-labelledby="v-pills-userdata-tab">
+            <div class="tab-pane fade tab-content show active" id="tab1">
            
                 <div class="card" style="border: none; --mdb-card-box-shadow:0;">
                   <div class="card-body card-body--padding--2">
@@ -627,8 +613,7 @@
                 </div>
            
             </div>
-            <div class="tab-pane fade" id="v-pills-newpassword" role="tabpanel"
-              aria-labelledby="v-pills-newpassword-tab">
+            <div class="tab-pane fade tab-content" id="tab2">
            
                 <div class="card" style="border: none; --mdb-card-box-shadow:0;">
                   <div class="card-body card-body--padding--2">
@@ -660,7 +645,7 @@
             
               </div>
             </div>
-            <div class="tab-pane fade" id="v-pills-orderdate" role="tabpanel" aria-labelledby="v-pills-orderdate-tab">
+            <div class="tab-pane fade tab-content" id="tab3">
            
                 <div class="card" style="border: none; --mdb-card-box-shadow:0;">
                   <div class="card-header">Sifariş tarixçəsi</div>
@@ -693,13 +678,12 @@
                 </div>
              
             </div>
-            <div class="tab-pane fade" id="v-pills-paydate" role="tabpanel" aria-labelledby="v-pills-paydate-tab">
+            <div class="tab-pane fade tab-content" id="tab4">
               <div class="alert alert-warning">
                 Ödəniş tarixçəniz boşdur
               </div>
             </div>
-            <div class="tab-pane fade" id="v-pills-addressinfo" role="tabpanel"
-              aria-labelledby="v-pills-addressinfo-tab">
+            <div class="tab-pane fade tab-content" id="tab5">
            
                 <div class="card" style="border: none; --mdb-card-box-shadow:0;">
                   <div class="card-body card-body--padding--2">
@@ -1242,6 +1226,9 @@
       <span class="footer__copy-con">© 2023, Pandorastore Romania</span>
     </div>
   </footer>
+
+</script>
+
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1249,9 +1236,6 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="./js/script.js"></script>
   <script src="./js/scriptJquery.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
