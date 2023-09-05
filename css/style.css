@@ -3972,6 +3972,7 @@ a {
 background-color: rgba(0, 0, 0, 0.76) !important;
 color: white !important;
 margin: 0.2rem  0!important;
+width: 100%;
 }
 
 @media (max-width: 1024px){
