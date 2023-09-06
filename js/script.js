@@ -1,3 +1,20 @@
+//  Profile Page Tabs Start
+
+const tabButtons = document.querySelectorAll('.tab-button');
+const tabContents = document.querySelectorAll('.tab-pane');
+
+tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('show', 'active'));
+
+        const tabId = button.getAttribute('data-tab');
+        const tabContent = document.getElementById(tabId);
+        button.classList.add('active');
+        tabContent.classList.add('show', 'active');
+    });
+});
+
 const submit = document.querySelector(".submit");
 const activForgetPassword = document.querySelector(".activForgetPassword");
 const activRegister = document.querySelector(".setup__box-register");
@@ -17,22 +34,7 @@ const clearAllButton = document.getElementById("clearAllButton");
 const searchFind = document.querySelector(".header__searchFind");
 const searchFindMob = document.querySelector(".header__searchFindMob");
 
-//  Profile Page Tabs Start
 
-const tabButtons = document.querySelectorAll('.tab-button');
-const tabContents = document.querySelectorAll('.tab-pane');
-
-tabButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        tabButtons.forEach(btn => btn.classList.remove('active'));
-        tabContents.forEach(content => content.classList.remove('show', 'active'));
-
-        const tabId = button.getAttribute('data-tab');
-        const tabContent = document.getElementById(tabId);
-        button.classList.add('active');
-        tabContent.classList.add('show', 'active');
-    });
-});
 
 //  Profile Page Tabs End
 
