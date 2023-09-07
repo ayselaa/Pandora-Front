@@ -2545,6 +2545,7 @@ __subtitle {
   align-items: center;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  user-select: none;
 }
 
 .sliderInfo__box {
@@ -3988,3 +3989,42 @@ width: 100%;
 }
 
 /*  Profile Tab  Css End */
+
+
+@media (max-width: 480px){
+  .sliderInfo__flex video{
+    height: auto;
+  }
+  .homeProduct__box {
+    height: 331px;
+    margin: 0;
+  }
+ .homeslider{
+  display: none;
+ }
+ .homeslider_mobile{
+  display: block !important;
+ }
+
+ .homeBanner__box {
+  position: absolute;
+  top: 50%;
+  left: 50% !important;
+ }
+  .rings__flex, .homeProduct__flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .rings__subtitle {
+    font-size: 10px;
+  }
+}
+
+.homeslider_mobile{
+  display: none;
+ }
+
+ .slick-track{
+  height: 300px;
+ }

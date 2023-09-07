@@ -10,10 +10,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
   </head>
   <body>
     <div class="header__searchFindMob">
@@ -174,7 +170,7 @@
             </div>
 
             <div class="header__box-icons">
-              <a href="./log.html">
+              <a href="./login.html">
                 <img
                   src="./svg/user.svg"
                   alt="Pandora user"
@@ -282,9 +278,7 @@
       </div>
     </header>
     <main>
-      <div class="spacingSize">
-
-      </div>
+      <div class="spacingSize"></div>
 
       <section class="login">
         <div class="conteniar">
@@ -298,6 +292,8 @@
               <h1 class="login__title">Daxil olun</h1>
 
               <form class="setup__box-form" action="">
+
+                
                 <div class="setup__box-group">
                   <input
                     type="email"
@@ -306,52 +302,28 @@
                     id="email"
                   />
 
-                  <label class="payBasketleftSide__placholder" for="email">
+                  <label
+                    class=" payBasketleftSide__placholder"
+                    for="email"
+                  >
                     E-mail
                   </label>
                 </div>
-                
-                <div style="border: 1px solid black; width: 100%;
-                height: 45px;">
-                  <div
-                    class="setup__box-group"
-                    style="display: flex;  
-                    justify-content: center; 
-                     align-items: center;
-                     justify-content: space-between;
-                     user-select: none; 
+                <div class="setup__box-group">
+                  <input
+                    type="password"
+                    class="setup__box-input"
+                    placeholder="Şifrə"
+                    id="pass"
+                  />
 
-                    
-                ">
-                    <input
-                      type="password"
-                      class="password-input setup__box-input"
-                      style="
-                      padding-left: 20px;
-                      outline: none;
-                      padding-left: 9px;
-                      display: flex;
-                      align-items: center;
-                      padding-top: 0.7rem;
-                      box-shadow: none;
-                      user-select: none; 
-                      height: 100%;
-                     "
-                      placeholder="Şifrə"
-                      id="pass1"
-                    />
-                    
-                   <label class="payBasketleftSide__placholder" for="pass">
-                    Şifrə
-                  </label>
-
-                    <span class="material-symbols-outlined visibility" style="margin-right: 1rem; margin-top: 9px;  cursor: default; user-select: none; color: gray;">
-                      visibility
-                    </span>
-                  </div>
+                  <label
+                    class=" payBasketleftSide__placholder"
+                    for="pass"
+                    >Şifrə</label
+                  >
                 </div>
-
-                <a class="setup__box-forget activForgetPassword" style="margin-top: 1rem;" href="forgetpassword.html"
+                <a class="setup__box-forget activForgetPassword" href="#"
                   >Parolu Unutmusunuz?</a
                 >
 
@@ -361,13 +333,128 @@
                   value="Daxil Olun"
                 />
 
-                <a href="register.html" class="setup__box-register">Hesab Yarat</a>
+                <a href="#" class="setup__box-register">Hesab Yarat</a>
               </form>
+            </div>
+          </div>
+
+          <div class="forgotPass">
+            <div class="forgotPass__box">
+              <h1 class="login__title">Parolunuzu Sıfırlayın</h1>
+              <h4 class="login__subtitle">
+                Parolunuzu sıfırlamaq üçün sizə e-poçt göndərəcəyik
+              </h4>
+
+              <form action="">
+                <div class="setup__box-group">
+                  <input
+                    type="email"
+                    class="setup__box-input"
+                    placeholder="Email"
+                  />
+                  <label
+                  class=" payBasketleftSide__placholder"
+                  for="email"
+                >
+                  E-mail
+                </label>
+                </div>
+
+                <input
+                  class="submit setup__box-submit"
+                  type="submit"
+                  value="Daxil Olun"
+                />
+
+                <a href="#" class="setup__box-register activeLogin">Ləğv et</a>
+              </form>
+            </div>
+          </div>
+
+          <div class="registerPass">
+            <div class="registerPass__box">
+              <h1 class="login__title">Qeydiyat</h1>
+
+              <form action="">
+                <div class="setup__box-group">
+                  <input
+                    type="text"
+                    class="setup__box-input"
+                    id="name"
+                    placeholder="Ad"
+                  />
+
+                  <label
+                  class=" payBasketleftSide__placholder"
+                  for="name"
+                >
+                  Ad
+                </label>
+                </div>
+
+                <div class="setup__box-group">
+                  <input
+                    type="text"
+                    class="setup__box-input"
+                    placeholder="Soyad"
+                    id="surname"
+                  />
+
+                  <label
+                  class=" payBasketleftSide__placholder"
+                  for="surname"
+                >
+                Soyad
+                </label>
+                </div>
+
+                <div class="setup__box-group">
+                  <input
+                  id="email"
+                    type="email"
+                    class="setup__box-input"
+                    placeholder="E-mail"
+                  />
+
+                  <label
+                  class=" payBasketleftSide__placholder"
+                  for="email"
+                >
+                E-mail
+                </label>
+                </div>
+
+                <div class="setup__box-group">
+                  <input
+                    type="password"
+                    class="setup__box-input"
+                    placeholder="Parol"
+                    id="pass"
+                  />
+
+                  <label
+                  class=" payBasketleftSide__placholder"
+                  for="pass"
+                >
+                Parol
+                </label>
+                </div>
+
+                <input
+                  class="submit setup__box-submit"
+                  type="submit"
+                  value="Daxil Olun"
+                />
+
+
+              </form>
+
+              <a href="login.html" class="setup__box-register activeLogin">Hesabim var</a>
+
             </div>
           </div>
         </div>
       </section>
-
     </main>
 
     <footer class="footer">
@@ -601,13 +688,9 @@
         <span class="footer__copy-con">© 2023, Pandorastore Romania</span>
       </div>
     </footer>
+
     <script src="./js/script.js"></script>
+
+    <script></script>
   </body>
 </html>
-
-
-
-
-
-
-
